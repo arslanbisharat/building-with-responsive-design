@@ -103,11 +103,10 @@ html {
   height: 9px;
 }
 
-/* header */
-
 .logo-small {
   display: none;
-  background-image: linear-gradient(
+  background-image: 
+  linear-gradient(
     to bottom right,
     rgb(206, 2, 149),
     rgb(255, 68, 34) 80%
