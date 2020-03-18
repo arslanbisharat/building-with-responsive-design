@@ -359,7 +359,8 @@ html {
   right: 0;
   left: 0;
   bottom: 0;
-  background-image: linear-gradient(
+  background-image: 
+  linear-gradient(
     to right bottom,
     rgba(255, 67, 10, 0.85) 20%,
     rgba(255, 67, 10, 0.5) 60%,
