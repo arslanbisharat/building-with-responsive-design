@@ -6,7 +6,7 @@ Use of css and all of the page is responsive.
 
 - HTML, Css
 
-![screenshot](images/screenshot.png)
+![screenshot](imgs/screenshot.png)
 ## Live Demo
 
 [Live Demo Link](https://raw.githack.com/arslanbisharat/building-with-responsive-design/main-project/index.html)
