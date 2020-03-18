@@ -1,45 +1,1048 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Building Responsive Website</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <header class="header">
-        <nav class="nav-bar">
-            <div class="top-div">
-                
-                    <ul class="left-icons">
-                         <li><a href="#" class="news-icon">News</a></li>
-                         <li><a href="#">Events ▾</a></li> 
-                         <li><a href="#">Business ▾</a></li>
-                         <li><a href="#">AMAs</a></li>
-                         <li><a href="#">Spaces</a></li>
-                         <li><a href="#">Terms & Conditions</a></li>
-                    </ul>
-                     <ul class="right-icons">
-                         <li><a href="#">About</a></li>
-                         <li><a href="#">Team</a></li> 
-                         <li><a href="#">Advertise</a></li> 
-                         <li><a href="#">Jobs</a></li> 
-                         <li><a href="#">Contact</a></li>
-                     </ul>
-            </div>
-            <div class="bottom-nav">
-                <ul>
-                    <li><a href="#">Latest</a></li>
-                    <li><a href="#">Hard Fork</a></li>
-                    <li><a href="#">Plugged</a></li>
-                    <li><a href="#">Fundamentals</a></li>
-                    <li><a href="#">Work 2030</a></li>
-                    <li><a href="#">Readme</a></li>
-                    <li><a href="#">Growth Quarters</a></li>
-                    <li><a href="#">Neural</a></li>
-                </ul>
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Building with Responsive Design</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="main-header">
+        <nav class="main-nav">
+          <div class="logo-small show-medium">
+            <img src="images/tnw-small.svg" alt="small tnw logo" />
+          </div>
+          <div class="top-nav hide-small-large">
+            <ul>
+              <li><a href="#">News</a></li>
+              <li><a href="#">Events ▾</a></li>
+              <li><a href="#">Business ▾</a></li>
+              <li><a href="#">AMAs</a></li>
+              <li><a href="#">Spaces</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+            </ul>
+            <ul class="hide-medium-small">
+              <li><a href="#">About</a></li>
+              <li><a href="#">Team</a></li>
+              <li><a href="#">Advertise</a></li>
+              <li><a href="#">Jobs</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="bottom-nav">
+            <ul class="hide-small-large">
+              <li><a href="#">Latest</a></li>
+              <li><a href="#">Hard Fork</a></li>
+              <li><a href="#">Plugged</a></li>
+              <li><a href="#">Fundamentals</a></li>
+              <li><a href="#">Work 2030</a></li>
+              <li class="hide-medium-large"><a href="#">Readme</a></li>
+              <li class="hide-medium-large"><a href="#">Growth Quarters</a></li>
+              <li class="hide-medium"><a href="#">Neural</a></li>
+            </ul>
+            <ul>
+              <li>
+                <button>
+                  <i class="icon i-search"></i>
+                </button>
+              </li>
+              <li>
+                <button>
+                  <i class="icon i-menu"></i>
+                </button>
+              </li>
+            </ul>
+          </div>
         </nav>
-    </header>
-</body>
+        <div class="announcement">
+          <p>
+            Startups! You can exhibit, pitch, and meet investors at TNW2020 →
+          </p>
+        </div>
+      </header>
+      <main>
+        <section class="recent-articles-container">
+          <article
+            class="recent-article main-article"
+            style="background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/1-copy-796x417.jpg');"
+          >
+            <div class="hero hide-medium">
+              <div class="logo-large"></div>
+              <time datetime="2020-02-10">Monday — February 10, 2020</time>
+            </div>
+            <header class="recent-article-header">
+              <h4>TECH</h4>
+              <h2>
+                Google’s Meena is impressive, but AI chatbots are still ‘cheap
+                imitations’ of humans
+              </h2>
+              <div class="article-author">
+                <span>by Ben Dickson</span>
+                <i class="icon i-clock"></i>
+                <span>1 hour ago</span>
+                <i class="icon i-share"></i>
+                <span>2</span>
+              </div>
+            </header>
+          </article>
+          <article
+            class="recent-article"
+            style="background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/GQ2-796x417.png');"
+          >
+            <header class="recent-article-header">
+              <h4>INSIGHT</h4>
+              <h2>
+                How ‘product-led growth’ can propel your SaaS company to success
+                — no sales team needed
+              </h2>
+              <div class="article-author">
+                <span>by Sonya Pelia</span>
+                <i class="icon i-clock"></i>
+                <span>2 hours ago</span>
+                <i class="icon i-share"></i>
+                <span>15</span>
+              </div>
+            </header>
+          </article>
+          <article
+            class="recent-article"
+            style="background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/AI-video-restoration.png');"
+          >
+            <header class="recent-article-header">
+              <h4>TECH</h4>
+              <h2>
+                This AI model improves and colorizes old videos and the results
+                are stunning
+              </h2>
+              <div class="article-author">
+                <span>by Ivan Mehta</span>
+                <i class="icon i-clock"></i>
+                <span>3 hours ago</span>
+                <i class="icon i-share"></i>
+                <span>25</span>
+              </div>
+            </header>
+          </article>
+        </section>
+        <div class="container">
+          <section class="latest-news-container">
+            <h2>Latest News ›</h2>
+            <article class="latest-news">
+              <a
+                style="background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/LOVE-LETTER-TO-WDPR2100-NAS-drive-516x270.png');"
+                href="#"
+              ></a>
+              <div class="heading-container">
+                <h3>A love letter to my beloved NAS Drive, the WD PR2100</h3>
+                <p class="article-author">Callum Booth • 1 minute ago</p>
+              </div>
+            </article>
+            <article class="latest-news">
+              <a
+                style="background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/1-copy-1-516x270.jpg');"
+                href="#"
+              ></a>
+              <div class="heading-container">
+                <h3>I fixed the infamous Iowa Caucus app in 30 minutes</h3>
+                <p class="article-author">Michal Malewicz • 46 minute ago</p>
+              </div>
+            </article>
+            <article class="latest-news">
+              <a
+                style="background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/bitcoin_today-header_bitcoin_today-512x270.jpg');"
+                href="#"
+              ></a>
+              <div class="heading-container">
+                <h3>
+                  Satoshi Nakaboto: ‘Bitcoin crosses $10,000 again after 5-month
+                  dip’
+                </h3>
+                <p class="article-author">Satoshi Nakaboto • 5 hours ago</p>
+              </div>
+            </article>
+            <article class="latest-news">
+              <a
+                style="background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/header-image-oscars-galaxy-z-flip-foldable-samsung-516x270.png');"
+                href="#"
+              ></a>
+              <div class="heading-container">
+                <h3>
+                  Samsung’s Galaxy Z Flip phone Oscars advert had some weird
+                  small print
+                </h3>
+                <p class="article-author">Callum Booth • 5 hours ago</p>
+              </div>
+            </article>
+            <article class="latest-news">
+              <a
+                style="background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/10/moonday-morning-bitcoin-blockchain-cryptocurrency-hacks-ethereum-480x270.jpg');"
+                href="#"
+              ></a>
+              <div class="heading-container">
+                <h3>
+                  Moonday Mornings: $4B OneCoin cryptocurrency scam to be made
+                  into TV drama
+                </h3>
+                <p class="article-author">Matthew Beedham • 5 hours ago</p>
+              </div>
+            </article>
+            <article class="latest-news">
+              <a
+                style="background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/Galaxy-unpacked-514x270.jpg');"
+                href="#"
+              ></a>
+              <div class="heading-container">
+                <h3>
+                  How to watch Samsung's Galaxy S20 event online
+                </h3>
+                <p class="article-author">van Mehta • 8 hours ago</p>
+              </div>
+            </article>
+            <article class="latest-news">
+              <a
+                style="background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/ptl-newsletter-hed-516x270.png');"
+                href="#"
+              ></a>
+              <div class="heading-container">
+                <h3>
+                  Pardon the Intrusion #10: Faces faces everywhere
+                </h3>
+                <p class="article-author">Ravie Lakshmanan • 11 hours ago</p>
+              </div>
+            </article>
+            <article class="latest-news">
+              <a
+                style="background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/Copy-of-...-1-516x270.png');"
+                href="#"
+              ></a>
+              <div class="heading-container">
+                <h3>
+                  This solar telescope just released its first close-up video of
+                  the Sun — and it’s stunning
+                </h3>
+                <p class="article-author">
+                  The Cosmic Companion • 22 hours ago
+                </p>
+              </div>
+            </article>
+          </section>
+          <section class="latest-foundings-container">
+            <header class="latest-foundings-header">
+              <h2>Latest funding rounds on Index.co ›</h2>
+              <ul>
+                <li><a href="#">Add info</a></li>
+                <li><a href="#">Get updates by email</a></li>
+                <li><a href="#">See more</a></li>
+              </ul>
+            </header>
+            <article class="latest-founding">
+              <img
+                src="https://img-cdn.tnwcdn.com/image?url=https%3A%2F%2Fpbs.twimg.com%2Fprofile_images%2F1013887496088969216%2FTeMkkGJS.jpg&signature=9d94339389929b82e954935ca53b1a45"
+                alt="ActBlue logo"
+              />
+              <h4>ActBlue</h4>
+              <hgroup>
+                <h4>$58M</h4>
+                <h5>IPO</h5>
+              </hgroup>
+              <ul class="tag-category">
+                <li>
+                  <i class="icon i-tag"></i>
+                  <span>Politics</span>
+                </li>
+              </ul>
+              <p class="short-description">
+                China’s vehicle exhaust treatment firm ActBlue raises $58m in
+                ChiNext IPO
+                <a href="#">
+                  on DealStreetAsia
+                </a>
+              </p>
+            </article>
+            <article class="latest-founding">
+              <img
+                src="https://img-cdn.tnwcdn.com/image?url=https%3A%2F%2Fpbs.twimg.com%2Fprofile_images%2F2583177410%2Faesibrv7eocan3rzd2w4.jpeg&signature=bae361585453bbd9d53e1dc2852c23eb"
+                alt="Iora Health logo"
+              />
+              <h4>Iora Health</h4>
+              <hgroup>
+                <h4>$126M</h4>
+                <h5>SERIES F</h5>
+              </hgroup>
+              <ul class="tag-category">
+                <li>
+                  <i class="icon i-tag"></i>
+                  <span>Health and Wellness</span>
+                </li>
+              </ul>
+              <p class="short-description">
+                Iora Health Completes $126M Series F Funding Round
+                <a href="#">
+                  on FinSMEs
+                </a>
+              </p>
+            </article>
+            <article class="latest-founding">
+              <img
+                src="https://img-cdn.tnwcdn.com/image?url=https%3A%2F%2Fpbs.twimg.com%2Fprofile_images%2F1016625432391749632%2FQI0ODYP0.jpg&signature=1cc96fedc288b46f75ff1a3596e76c66"
+                alt="Starling Bank logo"
+              />
+              <h4>Starling Bank</h4>
+              <hgroup>
+                <h4>$60M</h4>
+                <h5>UNDISCLOSED FUNDING</h5>
+              </hgroup>
+              <ul class="tag-category">
+                <li>
+                  <i class="icon i-tag"></i>
+                  <span>Payments +3</span>
+                </li>
+                <li>
+                  <i class="icon i-briefcase"></i>
+                  <span>Merian Global Investors</span>
+                </li>
+              </ul>
+              <p class="short-description">
+                Starling Bank raises £60 million and gives shares to all
+                employees
+                <a href="#">
+                  on Fintech Finance
+                </a>
+              </p>
+            </article>
+            <article class="latest-founding">
+              <img
+                src="https://img-cdn.tnwcdn.com/image?url=https%3A%2F%2Fpbs.twimg.com%2Fprofile_images%2F651030477512572928%2FdOtOSQqs.png&signature=cf1bdd10ac0a97953894034a734c18c6"
+                alt="dot logo"
+              />
+              <h4>dot</h4>
+              <hgroup>
+                <h4>$8M</h4>
+                <h5>Seed Fund</h5>
+              </hgroup>
+              <ul class="tag-category">
+                <li>
+                  <i class="icon i-tag"></i>
+                  <span>Apps</span>
+                </li>
+                <li>
+                  <i class="icon i-briefcase"></i>
+                  <span>PayU</span>
+                </li>
+              </ul>
+              <p class="short-description">
+                Ecommerce firm Dot lands $8m seed funding
+                <a href="#">
+                  on FinTech Futures
+                </a>
+              </p>
+            </article>
+          </section>
+          <section class="latest-category-news-container">
+            <section class="latest-category-news">
+              <h2>Apps ›</h2>
+              <ul>
+                <li>
+                  <article
+                    class="latest-most-popular"
+                    style="background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/06/IGTV-368x276.jpg');"
+                  >
+                    <header class="article-header">
+                      <h4>MOST POPULAR</h4>
+                      <h3>
+                        Instagram tests IGTV ads that let creators monetize
+                        their vids
+                      </h3>
+                      <p class="article-author">Rachel Kaser • 2 days ago</p>
+                    </header>
+                  </article>
+                </li>
+                <li>
+                  <article class="secondary-most-popular">
+                    <header>
+                      <h4>LATEST</h4>
+                      <h3>
+                        WhatsApp beta reveals dark mode is finally coming to the
+                        iPhone
+                      </h3>
+                    </header>
+                    <a
+                      class="latest-category-img"
+                      style="background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/12/WhatsApp-hed.jpg');"
+                      href="#"
+                    ></a>
+                  </article>
+                </li>
+                <li>
+                  <h4>
+                    How to opt out of Netflix's autoplay previews
+                  </h4>
+                </li>
+                <li>
+                  <h4>
+                    This indoor cycling app is making me suffer, and it's highly
+                    effective
+                  </h4>
+                </li>
+                <li>
+                  <h4>
+                    How to have different names in Discord servers
+                  </h4>
+                </li>
+                <li>
+                  <h4>
+                    Here's how to find The Ringer's podcasts on Spotify
+                  </h4>
+                </li>
+                <li>
+                  <h4>
+                    WhatsApp fixed a bug in its desktop app that allowed access
+                    to files on your computer
+                  </h4>
+                </li>
+              </ul>
+            </section>
+            <section class="latest-category-news">
+              <h2>Gear ›</h2>
+              <ul>
+                <li>
+                  <article
+                    class="latest-most-popular"
+                    style="background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/header-image-oscars-galaxy-z-flip-foldable-samsung-368x276.png');"
+                  >
+                    <header class="article-header">
+                      <h4>MOST POPULAR</h4>
+                      <h3>
+                        Samsung’s Galaxy Z Flip phone Oscars advert had some
+                        weird small print
+                      </h3>
+                      <p class="article-author">Callum Booth • 5 hours ago</p>
+                    </header>
+                  </article>
+                </li>
+                <li>
+                  <article class="secondary-most-popular">
+                    <header>
+                      <h4>LATEST</h4>
+                      <h3>
+                        Damn, Apple’s new CarKey feature sounds cool as fuck
+                      </h3>
+                    </header>
+                    <a
+                      class="latest-category-img"
+                      style="background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/header-image-apple-tim-cook-car-key-unlock.png');"
+                      href="#"
+                    ></a>
+                  </article>
+                </li>
+                <li>
+                  <h4>
+                    What is a macro lens and could it be the next big thing for
+                    phone cameras?
+                  </h4>
+                </li>
+                <li>
+                  <h4>
+                    Google makes it easier to buy the latest version of Glass
+                  </h4>
+                </li>
+                <li>
+                  <h4>
+                    Dyson patents headphones that double as an air purifier for
+                    your face
+                  </h4>
+                </li>
+                <li>
+                  <h4>
+                    Trump's former campaign manager really digs Escobar's new
+                    foldable phone
+                  </h4>
+                </li>
+                <li>
+                  <h4>
+                    BlackBerry phones are dead.... again
+                  </h4>
+                </li>
+              </ul>
+            </section>
+            <section class="latest-category-news">
+              <h2>Tech ›</h2>
+              <ul>
+                <li>
+                  <article
+                    class="latest-most-popular"
+                    style="background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/AI-video-restoration-368x276.png');"
+                  >
+                    <header class="article-header">
+                      <h4>MOST POPULAR</h4>
+                      <h3>
+                        This AI model improves and colorizes old videos and the
+                        results are stunning
+                      </h3>
+                      <p class="article-author">Ivan Mehta • 3 hours ago</p>
+                    </header>
+                  </article>
+                </li>
+                <li>
+                  <article class="secondary-most-popular">
+                    <header>
+                      <h4>LATEST</h4>
+                      <h3>
+                        I fixed the infamous Iowa Caucus app in 30 minutes
+                      </h3>
+                    </header>
+                    <a
+                      class="latest-category-img"
+                      style="background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/1-copy-1.jpg');"
+                      href="#"
+                    ></a>
+                  </article>
+                </li>
+                <li>
+                  <h4>
+                    Google's Meena is impressive, but AI chatbots are still
+                    'cheap imitations' of humans
+                  </h4>
+                </li>
+                <li>
+                  <h4>
+                    This AI model improves and colorizes old videos and the
+                    results are stunning
+                  </h4>
+                </li>
+                <li>
+                  <h4>
+                    How deceptive UX patterns trick you into doing what
+                    companies want
+                  </h4>
+                </li>
+                <li>
+                  <h4>
+                    How to make your app's 'Settings' menu more user-friendly
+                  </h4>
+                </li>
+                <li>
+                  <h4>
+                    NASA wants the auto industry to build its next Moon rover
+                  </h4>
+                </li>
+              </ul>
+            </section>
+            <section class="latest-category-news">
+              <h2>Creative ›</h2>
+              <ul>
+                <li>
+                  <article
+                    class="latest-most-popular"
+                    style="background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/Amazon-Dating-Featured-368x276.jpg');"
+                  >
+                    <header class="article-header">
+                      <h4>MOST POPULAR</h4>
+                      <h3>
+                        This Amazon parody dating site is hilarious... and also
+                        kind of creepy
+                      </h3>
+                      <p class="article-author">Rachel Kaser • 4 hours ago</p>
+                    </header>
+                  </article>
+                </li>
+                <li>
+                  <article class="secondary-most-popular">
+                    <header>
+                      <h4>LATEST</h4>
+                      <h3>
+                        Leaked trailer offers a new look at Godfall, the first
+                        game announced for PS5
+                      </h3>
+                    </header>
+                    <a
+                      class="latest-category-img"
+                      style="background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/01/GodfallTeaser04.png');"
+                      href="#"
+                    ></a>
+                  </article>
+                </li>
+                <li>
+                  <h4>
+                    Instagram's decision to hide photoshopped images is a
+                    disservice to art
+                  </h4>
+                </li>
+                <li>
+                  <h4>
+                    How to design better buttons
+                  </h4>
+                </li>
+                <li>
+                  <h4>
+                    Giphy debuts Arcade, a platform for making and playing
+                    'microgames'
+                  </h4>
+                </li>
+                <li>
+                  <h4>
+                    Microsoft's new font for devs is very aesthetically pleasing
+                    (and free)
+                  </h4>
+                </li>
+                <li>
+                  <h4>
+                    How to build a production and recording studio that fits in
+                    a backpack
+                  </h4>
+                </li>
+              </ul>
+            </section>
+            <section class="latest-category-news">
+              <h2>Podium ›</h2>
+              <ul>
+                <li>
+                  <article
+                    class="latest-most-popular"
+                    style="background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/0567_BF2_5846-368x276.jpg');"
+                  >
+                    <header class="article-header">
+                      <h4>MOST POPULAR</h4>
+                      <h3>
+                        Application performance monitoring goes full-stack baby
+                      </h3>
+                      <p class="article-author">
+                        Neil C. Hughes • 22 hours ago
+                      </p>
+                    </header>
+                  </article>
+                </li>
+                <li>
+                  <article class="secondary-most-popular">
+                    <header>
+                      <h4>LATEST</h4>
+                      <h3>
+                        Everything you need to know about Bees in Minecraft
+                      </h3>
+                    </header>
+                    <a
+                      class="latest-category-img"
+                      style="background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/01/buzzy-bees.jpg');"
+                      href="#"
+                    ></a>
+                  </article>
+                </li>
+                <li>
+                  <h4>
+                    Don't be fooled: Blockchains are not miracle security
+                    solutions
+                  </h4>
+                </li>
+                <li>
+                  <h4>
+                    For AI to succeed, ‘computer says no’ needs to die
+                  </h4>
+                </li>
+                <li>
+                  <h4>
+                    How to protect your customers’ data after Brexit
+                  </h4>
+                </li>
+                <li>
+                  <h4>
+                    Digital trends 2020: Every single stat you need to know
+                    about the internet
+                  </h4>
+                </li>
+                <li>
+                  <h4>
+                    It’s 2020 and we still have a data privacy problem
+                  </h4>
+                </li>
+              </ul>
+            </section>
+            <section class="latest-category-news">
+              <h2>Insights ›</h2>
+              <ul>
+                <li>
+                  <article
+                    class="latest-most-popular"
+                    style="background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/bitcoin_today-header_bitcoin_today-368x276.jpg');"
+                  >
+                    <header class="article-header">
+                      <h4>MOST POPULAR</h4>
+                      <h3>
+                        Satoshi Nakaboto: ‘Bitcoin crosses $10,000 again after
+                        5-month dip’
+                      </h3>
+                      <p class="article-author">
+                        Satoshi Nakaboto • 5 hours ago
+                      </p>
+                    </header>
+                  </article>
+                </li>
+                <li>
+                  <article class="secondary-most-popular">
+                    <header>
+                      <h4>LATEST</h4>
+                      <h3>
+                        How ‘product-led growth’ can propel your SaaS company to
+                        success — no sales team needed
+                      </h3>
+                    </header>
+                    <a
+                      class="latest-category-img"
+                      style="background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/GQ2.png');"
+                      href="#"
+                    ></a>
+                  </article>
+                </li>
+                <li>
+                  <h4>
+                    Satoshi Nakaboto: ‘Bitcoin crosses $10,000 again after
+                    5-month dip’
+                  </h4>
+                </li>
+                <li>
+                  <h4>
+                    Moonday Mornings: $4B OneCoin cryptocurrency scam to be made
+                    into TV drama
+                  </h4>
+                </li>
+                <li>
+                  <h4>
+                    Every c-suite leader needs to be a ‘Chief Empathy Officer’
+                  </h4>
+                </li>
+                <li>
+                  <h4>
+                    Here are the 9 titles Netflix purged due to government
+                    censorship
+                  </h4>
+                </li>
+                <li>
+                  <h4>
+                    New Tesla registrations up 168% in Germany — adding to Model
+                    3's EV dominance in Europe
+                  </h4>
+                </li>
+              </ul>
+            </section>
+            <section class="latest-category-news">
+              <h2>Launch ›</h2>
+              <ul>
+                <li>
+                  <article
+                    class="latest-most-popular"
+                    style="background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/10/Amazon-Prime-Fresh-delivery-hed-368x276.jpg');"
+                  >
+                    <header class="article-header">
+                      <h4>MOST POPULAR</h4>
+                      <h3>
+                        PSA: Amazon Fresh grocery deliveries are now free for US
+                        Prime members
+                      </h3>
+                      <p class="article-author">
+                        Abhimanyu Ghoshal • 3 months ago
+                      </p>
+                    </header>
+                  </article>
+                </li>
+                <li>
+                  <article class="secondary-most-popular">
+                    <header>
+                      <h4>LATEST</h4>
+                      <h3>
+                        Alexis Ohanian and Serj Tankian team up to help build a
+                        social network for Armenia
+                      </h3>
+                    </header>
+                    <a
+                      class="latest-category-img"
+                      style="background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/10/Press-Conference-with-Eric-Esrailian-Alexis-Ohanian-Hakob-Arshakyan-Yervant-Zorian-and-Serj-Tankian-hed.jpg');"
+                      href="#"
+                    ></a>
+                  </article>
+                </li>
+                <li>
+                  <h4>
+                    Google Assistant gets its own phone number in India
+                  </h4>
+                </li>
+                <li>
+                  <h4>
+                    Pam and Angela from The Office are re-watching the show for
+                    their new podcast
+                  </h4>
+                </li>
+                <li>
+                  <h4>
+                    Bethesda wants you to test its game streaming tech with DOOM
+                    on iOS this year
+                  </h4>
+                </li>
+                <li>
+                  <h4>
+                    Mozilla rolls out new automated crypto-jacking filtering in
+                    Firefox
+                  </h4>
+                </li>
+                <li>
+                  <h4>
+                    Google announces Stadia, its cross-platform game streaming
+                    service
+                  </h4>
+                </li>
+              </ul>
+            </section>
+            <section class="latest-category-news">
+              <h2>Distract ›</h2>
+              <ul>
+                <li>
+                  <article
+                    class="latest-most-popular"
+                    style="background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/ViacomCBS-368x276.jpg');"
+                  >
+                    <header class="article-header">
+                      <h4>MOST POPULAR</h4>
+                      <h3>
+                        ViacomCBS reportedly joining the streaming wars... again
+                      </h3>
+                      <p class="article-author">Rachel Kaser • 2 days ago</p>
+                    </header>
+                  </article>
+                </li>
+                <li>
+                  <article class="secondary-most-popular">
+                    <header>
+                      <h4>LATEST</h4>
+                      <h3>
+                        Disney+ snags Hamilton: The Movie
+                      </h3>
+                    </header>
+                    <a
+                      class="latest-category-img"
+                      style="background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/Hamilton-hed.jpg');"
+                      href="#"
+                    ></a>
+                  </article>
+                </li>
+                <li>
+                  <h4>
+                    Artist fakes Google Maps traffic jam with 99 phones
+                  </h4>
+                </li>
+                <li>
+                  <h4>
+                    Flashpoint archived thousands of old Flash games because
+                    someone had to
+                  </h4>
+                </li>
+                <li>
+                  <h4>
+                    Netflix is turning One Piece into a live-action series and
+                    I'm worried
+                  </h4>
+                </li>
+                <li>
+                  <h4>
+                    You can now bother Google for tech support with #AndroidHelp
+                  </h4>
+                </li>
+                <li>
+                  <h4>
+                    Watch this Sonic movie-themed Wiz Khalifa music video you
+                    didn't know you needed
+                  </h4>
+                </li>
+              </ul>
+            </section>
+          </section>
+          <section class="latest-deals-container">
+            <header class="latest-deals-header">
+              <h2>Latest deals ›</h2>
+              <a href="#">See all Deals</a>
+            </header>
+            <article class="latest-deal">
+              <a
+                class="deal-img"
+                style="background-image: url('https://cdnp0.stackassets.com/a1b45c57042cdef1f1b897016cfde23589de621d/store/55c827cf0a6ce820b885872694c7271be3c3e8f89e91e59b2637a866fffa/sale_25748_primary_image.jpg');"
+                href="#"
+              ></a>
+              <div class="heading-container">
+                <h3>
+                  The Complete 2020 Microsoft Azure Certification Prep Bundle
+                </h3>
+                <h4>
+                  <span class="initial-price">$1839.99</span>
+                  <span class="sale-price">$39</span>
+                </h4>
+              </div>
+            </article>
+            <article class="latest-deal">
+              <a
+                class="deal-img"
+                style="background-image: url('https://cdnp0.stackassets.com/254488047c285c19027e743778059a9a40ec6624/store/2bbb1a09d9fc24e1a202d8f86a6cfbd22f634575b6367d3b4c3e442a3875/sale_24707_primary_image.jpg');"
+                href="#"
+              ></a>
+              <div class="heading-container">
+                <h3>
+                  The Pro Google SEO & SERP Certification Bundle
+                </h3>
+                <h4>
+                  <span class="initial-price">$2000</span>
+                  <span class="sale-price">$29</span>
+                </h4>
+              </div>
+            </article>
+            <article class="latest-deal">
+              <a
+                class="deal-img"
+                style="background-image: url('https://cdnp2.stackassets.com/951117fa37bba0fe8c35739ab4459a0c01b9590f/store/2e4b58df51e1a58ef7a4e81238bf44883552cc806bdcd1a077740a375ec1/sale_25677_primary_image.jpg');"
+                href="#"
+              ></a>
+              <div class="heading-container">
+                <h3>
+                  The Quickbooks Pro Desktop Certification Bonus Bundle
+                </h3>
+                <h4>
+                  <span class="initial-price">$1600</span>
+                  <span class="sale-price">$24.99</span>
+                </h4>
+              </div>
+            </article>
+            <article class="latest-deal">
+              <a
+                class="deal-img"
+                style="background-image: url('https://cdnp2.stackassets.com/ad764bf812aea6e7a0705b361d526c88e80e1f24/store/d0e62bd390d4466d601b31991f4b970ee69bcd91be34190b8f0d670d3df6/sale_25810_primary_image.jpg');"
+                href="#"
+              ></a>
+              <div class="heading-container">
+                <h3>
+                  AWS Certified Solutions Architect Professional Practice Tests
+                  + Courses Bundle
+                </h3>
+                <h4>
+                  <span class="initial-price">$129.90</span>
+                  <span class="sale-price">$14.99</span>
+                </h4>
+              </div>
+            </article>
+            <article class="latest-deal">
+              <a
+                class="deal-img"
+                style="background-image: url('https://cdnp1.stackassets.com/cba31166b47b2c151d94a8397c4aa0604771f268/store/04b44dd5593f2a7c175e4dd48292fe76d560b9c1c0536d03345aa8c50141/sale_18367_primary_image.jpg');"
+                href="#"
+              ></a>
+              <div class="heading-container">
+                <h3>
+                  Learn How to Draw Freebie Bundle
+                </h3>
+                <h4>
+                  <span class="initial-price">$0</span>
+                  <span class="sale-price">$0</span>
+                </h4>
+              </div>
+            </article>
+            <article class="latest-deal">
+              <a
+                class="deal-img"
+                style="background-image: url('https://cdnp2.stackassets.com/bf84706fb803abbd6b2c8a0fe58ef08d9484a2df/store/0beb6bb44c59a7f6dc95481cc2cedf69c028190e79cb9aa5b6bc74d8453a/product_35088_product_shots2.jpg');"
+                href="#"
+              ></a>
+              <div class="heading-container">
+                <h3>
+                  Ludwig Sentence Search Engine: Lifetime Subscription
+                </h3>
+                <h4>
+                  <span class="initial-price">$299</span>
+                  <span class="sale-price">$119</span>
+                </h4>
+              </div>
+            </article>
+            <article class="latest-deal">
+              <a
+                class="deal-img"
+                style="background-image: url('https://cdnp3.stackassets.com/f6768e41a9920bdcd086be7719365387529af7bc/store/68d73c3ec232ea7a6c53f2eb216430cc3019f60a64a6a8ed28f265785f1b/sale_21856_primary_image.jpg');"
+                href="#"
+              ></a>
+              <div class="heading-container">
+                <h3>
+                  AWS Certified Solutions Architect Associate Courses + Tests
+                  Bundle
+                </h3>
+                <h4>
+                  <span class="initial-price">$59.90</span>
+                  <span class="sale-price">$9.99</span>
+                </h4>
+              </div>
+            </article>
+            <article class="latest-deal">
+              <a
+                class="deal-img"
+                style="background-image: url('https://cdnp3.stackassets.com/0b442829152188ef5c1de0aff7d72820282f26e0/store/73b9b30bec03d67a0c89bae3aaaddafc5a59895b1edd5194d61ab010f926/sale_20564_primary_image.jpg');"
+                href="#"
+              ></a>
+              <div class="heading-container">
+                <h3>
+                  KeepSolid VPN Unlimited: Lifetime Subscription
+                </h3>
+                <h4>
+                  <span class="initial-price">$499.99</span>
+                  <span class="sale-price">$39</span>
+                </h4>
+              </div>
+            </article>
+          </section>
+        </div>
+      </main>
+      <footer class="main-footer">
+        <div class="social-links">
+          <ul>
+            <li>
+              <a href="#"><i class="icon i-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="icon i-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="icon i-youtube"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="icon i-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="icon i-pinterest"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="icon i-feed"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="icon i-email"></i></a>
+            </li>
+          </ul>
+          <ul>
+            <li><a href="#">EVENTS</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li class="hide-small-large"><a href="#">TEAM</a></li>
+            <li><a href="#">ADVERTISE</a></li>
+            <li><a href="#">JOBS</a></li>
+            <li><a href="#">CONTACT</a></li>
+          </ul>
+        </div>
+        <div class="copyright">
+          <p>
+            <i class="icon i-tnw-small"></i>
+            © 2006–2020 The Next Web B.V.
+          </p>
+          <p>Made with <span style="color: #f42;">♥</span> in Amsterdam.</p>
+          <p>
+            Powered by
+            <i class="icon i-stackpath"></i>
+          </p>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>
