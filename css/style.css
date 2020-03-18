@@ -106,11 +106,11 @@ html {
 .logo-small {
   display: none;
   background-image:
-  linear-gradient(
-    to bottom right,
-    rgb(206, 2, 149),
-    rgb(255, 68, 34) 80%
-  );
+      linear-gradient(
+          to bottom right,
+        rgb(206, 2, 149),
+        rgb(255, 68, 34) 80%
+    );
 }
 
 .logo-small img {
@@ -360,12 +360,12 @@ html {
   left: 0;
   bottom: 0;
   background-image:
-  linear-gradient(
-    to right bottom,
-    rgba(255, 67, 10, 0.85) 20%,
-    rgba(255, 67, 10, 0.5) 60%,
+      linear-gradient(
+        to right bottom,
+      rgba(255, 67, 10, 0.85) 20%,
+      rgba(255, 67, 10, 0.5) 60%,
     transparent
-  );
+    );
 }
 
 .hero time {
